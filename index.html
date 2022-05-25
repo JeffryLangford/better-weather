@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Weather</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="m-auto bg-light">
+    <main class="container-fluid">
+        <header class="text-center">
+            <h1>Better Weather</h1>
+            <p>A Weather Dashboard</p>
+        </header>
+        <div class="row p-2 m-2">
+            <div class="col-3">
+                <div>
+                    <h2 class="mb-2">Search for a City:</h2>
+                    <input class="rounded w-100"></input></br>
+                    <button id="search" type="button" class="btn-primary btn my-2 w-100">Search</button>
+                </div>
+                <div id="local-storage-cities"></div>
+            </div>
+            <div class="col-9">
+                <div id="weather-now-results" class="border">Hello</div>
+                <div id="5-day-forecast-results" class="border">Hello</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
