@@ -9,26 +9,65 @@
 </head>
 <body class="m-auto bg-light">
     <main class="container-fluid">
-        <header class="text-center">
+        <header class="text-center bg-info p-3">
             <h1>Better Weather</h1>
             <p>A Weather Dashboard</p>
         </header>
         <div class="row p-2 m-2">
             <div class="col-3">
                 <div>
-                    <h2 class="mb-2">Search for a City:</h2>
-                    <input class="rounded w-100"></input></br>
+                    <h3 class="mb-2">Search for a City:</h3>
+                    <input id="input" class="rounded w-100"></input></br>
                     <button id="search" type="button" class="btn-primary btn my-2 w-100">Search</button>
                 </div>
-                <div id="local-storage-cities"></div>
+                <div id="cities"></div>
             </div>
             <div class="col-9">
-                <div id="weather-now-results" class="border">Hello</div>
-                <div id="5-day-forecast-results" class="border">Hello</div>
+                <div id="weather-now-results" class="border">
+                    <h3 id="city-name"></h3>
+                    <p id="temp">Temperature: </p>
+                    <p id="wind">Wind Speed: </p>
+                    <p id="humidity">Humidity: </p>
+                    <p id="uv-index">UV-index: </p>
+                </div>
+                <h2>5-Day forecast:</h2>
+                <div id="5-day-forecast-results" class="border d-inline-flex">
+                    <card class="m-2 p-2">
+                        <h3 id="date1">Date: </h3>
+                        <p id="temp1">Temperature: </p>
+                        <p id="wind1">Wind Speed: </p>
+                        <p id="humidity1">Humidity: </p>
+                    </card>
+                    <card class="m-2 p-2">
+                        <h3 id="date2">Date: </h3>
+                        <p id="temp2">Temperature: </p>
+                        <p id="wind2">Wind Speed: </p>
+                        <p id="humidity2">Humidity: </p>
+                    </card>
+                    <card class="m-2 p-2">
+                        <h3 id="date3">Date: </h3>
+                        <p id="temp3">Temperature: </p>
+                        <p id="wind3">Wind Speed: </p>
+                        <p id="humidity3">Humidity: </p>
+                    </card>
+                    <card class="m-2 p-2">
+                        <h3 id="date4">Date: </h3>
+                        <p id="temp4">Temperature: </p>
+                        <p id="wind4">Wind Speed: </p>
+                        <p id="humidity4">Humidity: </p>
+                    </card>
+                    <card class="m-2 p-2">
+                        <h3 id="date5">Date: </h3>
+                        <p id="temp5">Temperature: </p>
+                        <p id="wind5">Wind Speed: </p>
+                        <p id="humidity5">Humidity: </p>
+                    </card>
+                </div>
             </div>
         </div>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
